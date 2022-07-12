@@ -1,0 +1,59 @@
+//    Categories section styles
+
+.categories
+    height: 29rem
+    background-color: $color-bg1
+
+.categories__container
+    display: grid
+    grid-template-columns: 40% 60%
+
+.categories__left
+    margin-right: 4rem
+
+.categories__left h1
+    margin-bottom: 3rem
+    line-height: 1
+
+.categories__left p
+    margin: 1rem 0 3rem
+
+.categories__right
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 1.2rem
+
+.category
+    padding: 2rem
+    border-radius: 2rem
+
+    background-color: $color-bg2
+    transition: $transition
+
+    &:hover
+        box-shadow: 0 3rem 3rem rgba(0, 0, 0, .2)
+
+.category:nth-child(2) .category__icon
+    background-color: $color-danger
+
+.category:nth-child(3) .category__icon
+    background-color: $color-success
+
+.category:nth-child(4) .category__icon
+    background-color: $color-warning
+
+.category:nth-child(5) .category__icon
+    background-color: $color-success
+
+.category__icon
+    padding: .7rem
+    border-radius: .9rem
+    background-color: $color-primary
+
+.category__heading
+    margin: 2rem 0 1rem
+
+.category__text
+    font-size: .85rem
+
+

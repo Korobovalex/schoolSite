@@ -8,8 +8,13 @@ nav
     display: flex
     width: 100vw
     height: 5rem
-
     z-index: 11
+    transition: $transition
+
+    &.scrolled
+        background-color: $color-primary
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .7)
+
 
 .nav__container
     display: flex
