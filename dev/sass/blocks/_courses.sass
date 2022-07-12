@@ -1,0 +1,26 @@
+//    Courses section styles
+
+.courses
+    margin-top: 10rem
+
+.courses__container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 2rem
+
+.course
+    border: 1px solid transparent
+    text-align: center
+    background-color: $color-bg1
+    transition: $transition
+
+    &:hover
+        background-color: transparent
+        border-color: $color-primary
+
+.course__info
+    padding: 2rem
+
+.course__text
+    margin: 1.2rem 0 2rem
+    font-size: .9rem
