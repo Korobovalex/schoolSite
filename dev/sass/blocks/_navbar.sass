@@ -1,0 +1,35 @@
+//    Navbar styles
+
+
+nav
+    position: fixed
+    top: 0
+
+    display: flex
+    width: 100vw
+    height: 5rem
+
+    z-index: 11
+
+.nav__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+
+    & button
+        display: none
+
+
+.nav__list
+    display: flex
+    align-items: center
+    gap: 4rem
+
+
+.nav__link
+    font-size: .9rem
+    transition: $transition
+
+    &:hover
+        color: $color-bg2

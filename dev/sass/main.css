@@ -1,3 +1,120 @@
+@import "https://unicons.iconscout.com/release/v2.1.5/css/unicons.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
 
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: #fff;
+  background-color: #1f2641;
+}
+
+.container {
+  width: 76%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+section h2 {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #f75842;
+  color: #fff;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100vw;
+  height: 5rem;
+  z-index: 11;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.nav__container button {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav__link {
+  font-size: 0.9rem;
+  transition: all 0.4s ease-in-out;
+}
+.nav__link:hover {
+  color: #424890;
+}
 
 /*# sourceMappingURL=main.css.map */

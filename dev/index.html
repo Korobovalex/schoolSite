@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WebSchool</title>
     <link rel="stylesheet" href="sass/main.css">
   </head>
   <body>
-    <h1 class="title">Main title</h1>
+    <nav>
+      <div class="container nav__container"><a class="logo-link" href="index.html">
+          <h4 class="logo">WebSchool</h4></a>
+        <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+              <li class="nav__item"><a class="nav__link" href="pages/about.html">About</a></li>
+              <li class="nav__item"><a class="nav__link" href="pages/courses.html">Courses</a></li>
+              <li class="nav__item"><a class="nav__link" href="pages/contact.html">Contact</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+    <!--    Header section start-->
+    <header>
+      <div class="container header__container">
+        <div class="header__left">
+          <h1 class="header__title">Grow your skills to advance your career path</h1>
+          <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate debitis deleniti dicta incidunt magnam quis reiciendis unde. Consequatur, earum maiores.</p><a class="header__btn btn btn-primary header__btn" href="pages/courses.html">Get started</a>
+        </div>
+        <div class="header__right">
+          <div class="header__right-img"><img src="img/header.svg" alt="Header image"></div>
+        </div>
+      </div>
+    </header>
+    <!--    Header section end-->
     <div class="container"></div>
     <script src="js/main.js"></script>
   </body>

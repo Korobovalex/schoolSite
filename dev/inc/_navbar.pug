@@ -1,0 +1,19 @@
+
+mixin navLink(link, name)
+    li.nav__item
+        a(href=link).nav__link=name
+
+
+nav
+    .container.nav__container
+        a.logo-link(href="index.html")
+            h4.logo WebSchool
+        ul.nav__list
+            +navLink('index.html', 'Home')
+            +navLink('pages/about.html', 'About')
+            +navLink('pages/courses.html', 'Courses')
+            +navLink('pages/contact.html', 'Contact')
+        button#open-menu-btn
+            i.uil.uil-bars
+        button#close-menu-btn
+            i.uil.uil-multiply
