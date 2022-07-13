@@ -1,0 +1,51 @@
+//    Footer section styles
+
+footer
+    padding-top: 5rem
+    font-size: .9rem
+    background-color: $color-bg1
+
+.footer__container
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 5rem
+
+footer > div h4
+    margin-bottom: 1.2rem
+
+.footer__block1-text
+    margin: 0 0 2rem
+
+footer ul li
+    margin-bottom: .7rem
+
+.permalink, .privacy__link
+    display: inline-block
+    line-height: 1
+
+.permalink:after, .privacy__link::after
+    content: ''
+    display: block
+    width: 0
+    height: 2px
+
+    background-color: #fff
+    transition: width 0.4s ease-in-out
+
+.permalink:hover::after, .privacy__link:hover::after
+    width: 100%
+
+.permalink:focus::after, .privacy__link:focus::after
+    width: 100%
+
+.footer__socials
+    display: flex
+    margin-top: 2rem
+    gap: 1rem
+    font-size: 1.2rem
+
+.footer_copyright
+    margin-top: 4rem
+    padding: 1.2rem 0
+    border-top: 1px solid $color-bg2
+    text-align: center
