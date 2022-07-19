@@ -35,6 +35,25 @@ faqs.forEach(faq => {
             slidesPerView: 2,
             spaceBetween: 30,
         }
-
       }
   });
+
+
+<!-- Dropdown navbar -->
+
+const navList = document.querySelector('.nav__list'),
+      openNavBtn = document.querySelector('#open-menu-btn'),
+      closeNavBtn = document.querySelector('#close-menu-btn');
+
+openNavBtn.addEventListener('click', () => {
+    navList.style.display = 'flex';
+    closeNavBtn.style.display = 'inline-block';
+    openNavBtn.style.display = 'none';
+});
+
+
+closeNavBtn.addEventListener('click', () => {
+    navList.style.display = 'none';
+    closeNavBtn.style.display = 'none';
+    openNavBtn.style.display = 'inline-block';
+});
