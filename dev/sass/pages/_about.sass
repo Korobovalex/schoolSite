@@ -1,0 +1,52 @@
+//    About page styles
+
+//    Achievements section styles
+
+.about__achievements
+    margin-top: 3rem
+
+.about__achievements-container
+    display: grid
+    grid-template-columns: 40% 60%
+    gap: 5rem
+
+.about__achievements-text
+    margin: 1.6rem 0 2.5rem
+
+.achievement__cards
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 1.5rem
+
+.achievement__card
+    padding: 1.6rem
+    border-radius: 1rem
+    text-align: center
+
+    background-color: $color-bg1
+    transition: $transition
+
+    &:hover
+        background-color: $color-bg2
+        box-shadow: 0 3rem 3rem rgba(0, 0, 0, .3)
+
+.achievement__icon
+    display: inline-block
+    margin-bottom: 2rem
+    padding: 0.6rem
+    border-radius: 1rem
+
+    font-size: 2rem
+    background-color: $color-danger
+
+.achievement__card
+    &:nth-child(2) .achievement__icon
+        background-color: $color-success
+
+.achievement__card
+    &:nth-child(3) .achievement__icon
+        background-color: $color-primary
+
+.achievement__heading
+    margin-top: 1rem
+    font-weight: 500
