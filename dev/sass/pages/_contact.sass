@@ -1,0 +1,83 @@
+//    Contact page styles
+
+.contact__container
+    display: grid
+    grid-template-columns: 40% 60%
+    gap: 4rem
+    height: 30rem
+    margin: 7rem auto
+    padding: 4rem
+    border-radius: 1rem
+    background-color: $color-bg1
+
+//    Aside
+
+.contact__aside
+    position: relative
+    bottom: 10rem
+
+    padding: 3rem
+    border-radius: 1rem
+    background-color: $color-primary
+
+.aside__img
+    width: 12rem
+    margin: 2rem
+
+.contact__heading
+    margin-bottom: 4rem
+    text-align: left
+
+.contact__text
+    margin-bottom: 2rem
+    font-size: .9rem
+
+.contact__item
+    display: flex
+    align-items: center
+    gap: 1rem
+    margin-bottom: 1rem
+
+.contact__socials
+    display: flex
+    gap: .8rem
+    margin-top: 3rem
+
+.contact__socials-link
+    padding: .5rem
+    border-radius: 50%
+
+    font-size: .9rem
+    background-color: $color-bg2
+    transition: $transition
+
+    &:hover
+        background-color: transparent
+
+
+//    Form
+
+.contact__form
+    display: flex
+    flex-direction: column
+    gap: 1.2rem
+    margin-right: 4rem
+
+.contact__form-name
+    display: flex
+    gap: 1.2rem
+
+    input[type="text"]
+        width: 50%
+
+.contact__form input, .contact__form textarea
+    width: 100%
+    padding: 1rem
+    background-color: $color-bg
+    color: $color-white
+
+
+.contact__form .btn
+    width: max-content
+    margin-top: 1rem
+    cursor: pointer

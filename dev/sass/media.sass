@@ -2,9 +2,6 @@
 
 @media screen and (max-width: 1024px)
 
-    section
-        padding: 3rem 1rem
-
     .container
         width: $container-width-md
 
@@ -89,7 +86,7 @@
         padding-bottom: 3rem
 
 
-    //Categories
+    //    Categories
 
     .categories
         height: auto
@@ -129,11 +126,13 @@
         grid-template-columns: repeat(2, 1fr)
 
 
-    //   Pages
 
-        //   About
 
-            //  Achievements
+    //    Pages
+
+        //    About
+
+            //    Achievements
 
     .about__achievements
         margin-top: 2rem
@@ -157,10 +156,37 @@
 
 
 
+        //    Contact
+
+    .contact
+        padding-bottom: 0
+
+    .contact__container
+        gap: 1.5rem
+        height: auto
+        margin-top: 3rem
+        padding: 1.5rem
+
+                //  Aside
+
+    .contact__aside
+        bottom: 0
+        padding: 1.5rem
+
+    .contact__heading
+        margin-bottom: 2rem!important
+
+    //  Form
+
+    .contact__form
+        align-self: center
+        margin-right: 1.5rem
 
 
 
-//    Media queries (for mobiles)
+
+
+//    Media queries (for mobiles)---------------------
 
 @media screen and (max-width: 768px)
 
@@ -241,4 +267,25 @@
 
     .team__member-post
         margin-bottom: 1.5rem
+
+
+    //   Contact
+
+    .contact__container
+        grid-template-columns: 1fr
+        gap: 3rem
+        margin-top: 0
+
+            //   ASide
+
+            //   Form
+
+    .contact__form
+        margin: 0 1.5rem 3rem
+
+    .contact__form-name
+        flex-direction: column
+
+        input[type="text"]
+            width: 100%
 

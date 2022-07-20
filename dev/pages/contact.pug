@@ -4,13 +4,61 @@ block variables
     - var pageTitle = 'Contact page'
 
 block links
-    link(rel="stylesheet", href="sass/swiper-bundle.min.css")
+    link(rel="stylesheet", href="../sass/swiper-bundle.min.css")
     link(rel="stylesheet", href="../sass/main.css")
 
 block content
-    include ../inc/sections/_about__achievements
+    //    Contact page start
+    section.contact
+        .container.contact__container
+            aside.contact__aside
+                img(src="../img/contact.svg", class="aside__img", alt="Contact aside image")
+
+                h2.contact__heading Contact us
+
+                p.contact__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia vel velit veniam!
+
+                ul.contact__details
+                    li.contact__item
+                        i.uil.uil-phone-times
+                        h5 +7 123 456 789
+
+                    li.contact__item
+                        i.uil.uil-envelope
+                        h5 support@egattor.com
+
+                    li.contact__item
+                        i.uil.uil-location-point
+                        h5 Accra, Ghana
+                ul.contact__socials.socials
+                    li.contact__socials-item
+                        a(class="contact__socials-link" href="https://facebook.com")
+                            i.uil.uil-facebook-f
+
+                    li.contact__socials-item
+                        a(class="contact__socials-link" href="https://instagram.com")
+                            i.uil.uil-instagram
+
+                    li.contact__socials-item
+                        a(class="contact__socials-link" href="https://twitter.com")
+                            i.uil.uil-twitter
+
+                    li.contact__socials-item
+                        a(class="contact__socials-link" href="https://linkedin.com")
+                            i.uil.uil-linkedin-alt
+
+
+            form.contact__form(action="")
+                .contact__form-name
+                    input(type="text", name="first_name", placeholder="First Name", required)
+                    input(type="text", name="last_name", placeholder="Last Name", required)
+                input(type="email", name="email", placeholder="Email address", required)
+                textarea(name="message", cols="30", rows="7", placeholder="Type your message", required)
+                button(type="submit", class="btn btn-primary") Send message
+    //    Contact page end
+
 
 
 block scripts
-    script(src="js/swiper-bundle.min.js")
-    script(src="js/main.js")
+    script(src="../js/swiper-bundle.min.js")
+    script(src="../js/main.js")
