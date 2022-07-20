@@ -50,3 +50,65 @@
 .achievement__heading
     margin-top: 1rem
     font-weight: 500
+
+
+
+//    Team section styles
+
+.about__team
+    background-color: $color-bg1
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, .5)
+
+.about__team-container
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 2rem
+
+.about__team-member
+    position: relative
+    padding: 2rem
+    border: 1px solid transparent
+    overflow: hidden
+    background-color: $color-bg2
+    transition: $transition
+
+    &:hover
+        background-color: transparent
+        border-color: $color-primary
+
+        & .team__member-img
+            filter: saturate(1)
+
+.team__member-img
+    filter: saturate(0)
+
+.team__member-name, .team__member-post, .team__member-socials
+    margin-top: 1.4rem
+    text-align: center
+
+.team__member-post
+    color: $color-light
+
+.team__member-socials
+    position: absolute
+    top: 50%
+    right: -100%
+
+    transform: translateY(-50%)
+    display: flex
+    flex-direction: column
+    border-radius: 1rem  0 0 1rem
+    box-shadow: -2rem 0 3rem rgba(0, 0, 0,3)
+    background-color: $color-primary
+    transition: $transition
+
+.team__member-social
+    padding: 1rem
+    transition: $transition
+
+    &:hover
+        background-color: $color-bg2
+        border-radius: 10px
+
+.about__team-member:hover .team__member-socials
+    right: 0
